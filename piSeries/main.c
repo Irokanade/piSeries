@@ -13,16 +13,14 @@ int main(int argc, const char * argv[]) {
     double GL = 4; //gregory leibniz series
     double Nila = 4; //nilakantha series
     
-    double a = 0.0;
-    
-    printf("test: %lf\n", ((0)*(1.0))/a*0);
+    double a = 1;
     
     printf("Please enter n (16-bits unsigned): ");
     scanf("%"SCNu16, &n);
     
     printf("n = 1\n");
-    printf("\tGregory – Leibniz series: %lf\n", GL);
-    printf("\tNilakantha series: %lf\n", Nila);
+    printf("\tGregory – Leibniz series: %lf (ddd%lf)\n", GL, a++);
+    printf("\tNilakantha series: %lf (ddd%lf)\n", Nila, a++);
     
     for(uint16_t i = 1; i < n;) {
         GL += (i%2 == 0)*(4.0/((i*2)+1)) + (i%2 != 0)*(-1)*(4.0/((i*2)+1));
@@ -31,8 +29,8 @@ int main(int argc, const char * argv[]) {
         
         //print
         printf("n = %"PRId16":\n", ++i);
-        printf("\tGregory – Leibniz series: %lf\n", GL);
-        printf("\tNilakantha series: %lf\n", Nila);
+        printf("\tGregory – Leibniz series: %lf (ddd%lf)\n", GL, a++);
+        printf("\tNilakantha series: %lf (ddd%lf)\n", Nila, a++);
     }
     
     
