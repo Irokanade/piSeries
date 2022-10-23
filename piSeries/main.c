@@ -11,7 +11,7 @@
 int main(int argc, const char * argv[]) {
     uint16_t n = 0;
     double GL = 4; //gregory leibniz series
-    double Nila = 4; //nilakantha series
+    double Nila = 3; //nilakantha series
     
     double a = 1;
     
